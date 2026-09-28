@@ -1,45 +1,384 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07140e"><meta name="description" content="Young Star Football Club — one team, one dream. Discover our squad, fixtures, and football community.">
-<title>Young Star Football Club | Official Website</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07110b">
+<meta name="description" content="Young Star Football Club & YSFA — football, discipline, development and ambition from Bettiah, Bihar.">
+<title>Young Star Football Club — YSFA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 <style>
-:root{--green:#b8ff35;--dark:#07140e;--panel:#102319;--muted:#a3b4a8;--white:#f5f8f4;--line:rgba(255,255,255,.12)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--dark);color:var(--white);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 44px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:absolute;top:0;left:0;right:0;z-index:5;padding:0 max(22px,calc((100% - 1180px)/2));background:rgba(5,17,10,.45);backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}.crest{width:46px;height:52px;background:var(--green);color:var(--dark);clip-path:polygon(50% 0,100% 12%,92% 72%,50% 100%,8% 72%,0 12%);display:grid;place-items:center;font-family:'Barlow Condensed';font-size:21px;font-weight:900}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.2em;margin-top:3px}.navlinks{display:flex;gap:30px;font-size:13px;font-weight:700}.navlinks a:hover{color:var(--green)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;background:var(--green);color:var(--dark);font-weight:800;font-size:12px;letter-spacing:.07em;text-transform:uppercase;border:0;cursor:pointer;transition:transform .2s,background .2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:#d0ff83}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:white;padding:9px 12px}.hero{min-height:740px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(4,16,9,.97) 0%,rgba(4,16,9,.82) 43%,rgba(4,16,9,.15) 100%),linear-gradient(0deg,var(--dark),transparent 35%),url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=2200&q=85') center/cover}.hero:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 110px,rgba(184,255,53,.025) 111px 112px);pointer-events:none}.hero-inner{position:relative;z-index:1;padding-top:90px;max-width:750px}.eyebrow{color:var(--green);font-size:11px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";height:2px;width:32px;background:var(--green)}h1,h2,h3,p{margin-top:0}h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(70px,10vw,140px);line-height:.82;letter-spacing:-.035em;text-transform:uppercase;margin:28px 0}.hero h1 span{color:var(--green);display:block}.hero p{max-width:450px;color:#c4d0c7;line-height:1.8;font-size:15px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn.outline{background:transparent;border:1px solid rgba(255,255,255,.45);color:white}.btn.outline:hover{background:white;color:var(--dark)}.hero-note{position:absolute;right:max(22px,calc((100% - 1180px)/2));bottom:76px;z-index:2;display:flex;align-items:center;gap:14px;font-size:10px;letter-spacing:.18em;color:#d9e5dc;text-transform:uppercase}.hero-note strong{font-family:'Barlow Condensed';font-size:30px;color:var(--green)}.ticker{background:var(--green);color:var(--dark);overflow:hidden;white-space:nowrap;padding:14px 0;font-family:'Barlow Condensed';font-size:20px;font-weight:800;letter-spacing:.08em}.ticker span{padding:0 28px}.ticker b{font-size:14px}.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:38px}.kicker{color:var(--green);font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin-bottom:12px}.section h2{font-family:'Barlow Condensed';font-size:clamp(42px,6vw,76px);line-height:.94;text-transform:uppercase;margin-bottom:0}.section h2 em{color:var(--green);font-style:normal}.section-desc{max-width:390px;color:var(--muted);line-height:1.8;font-size:13px;margin:0}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.about-visual{min-height:440px;position:relative;background:linear-gradient(0deg,rgba(5,18,10,.2),rgba(5,18,10,.1)),url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80') center/cover}.about-visual:before{content:"YSFC";position:absolute;bottom:-24px;left:-18px;font-family:'Barlow Condensed';font-size:100px;font-weight:900;color:var(--green);line-height:1}.about-badge{position:absolute;right:-22px;top:28px;background:var(--green);color:var(--dark);padding:20px;font-family:'Barlow Condensed';font-size:28px;font-weight:900;line-height:1;text-align:center}.about-badge small{display:block;font:700 9px 'DM Sans';letter-spacing:.12em;margin-top:7px}.about-copy p{color:var(--muted);font-size:14px;line-height:1.9}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}.value{border-top:1px solid var(--green);padding-top:15px}.value strong{display:block;font-family:'Barlow Condensed';font-size:24px;text-transform:uppercase}.value span{font-size:11px;color:var(--muted)}.dark-section{background:#0b1c12}.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.stat{padding:30px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-family:'Barlow Condensed';font-size:58px;color:var(--green);line-height:1}.stat span{font-size:10px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}.fixtures{display:grid;grid-template-columns:1fr 1fr;gap:16px}.match{background:var(--panel);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;gap:24px}.match-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}.tag{color:var(--green);border:1px solid rgba(184,255,53,.35);padding:6px 9px}.teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;text-align:center;gap:10px}.team-mark{width:58px;height:64px;margin:0 auto 10px;background:#1b3824;clip-path:polygon(50% 0,100% 12%,92% 72%,50% 100%,8% 72%,0 12%);display:grid;place-items:center;color:var(--green);font-family:'Barlow Condensed';font-size:24px;font-weight:900}.team-name{font-weight:800;font-size:12px}.vs{font-family:'Barlow Condensed';font-size:25px;color:#718477}.match-bottom{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:11px}.match-bottom strong{color:white}.squad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.player{position:relative;min-height:330px;overflow:hidden;background:#1b3222}.player img{width:100%;height:330px;object-fit:cover;filter:grayscale(100%);opacity:.72;transition:.4s}.player:hover img{filter:grayscale(0);opacity:1;transform:scale(1.04)}.player-info{position:absolute;bottom:0;left:0;right:0;padding:25px;background:linear-gradient(transparent,rgba(4,15,8,.98))}.player-info small{color:var(--green);font-weight:800;letter-spacing:.15em}.player-info h3{font-family:'Barlow Condensed';font-size:34px;text-transform:uppercase;margin:5px 0 0}.player-num{position:absolute;top:15px;right:18px;font-family:'Barlow Condensed';font-size:44px;font-weight:900;color:var(--green)}.join{padding:80px 0;background:var(--green);color:var(--dark);position:relative;overflow:hidden}.join:after{content:"YSFC";position:absolute;right:-20px;bottom:-90px;font-family:'Barlow Condensed';font-size:300px;font-weight:900;color:rgba(0,0,0,.055);line-height:1}.join-inner{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:30px}.join .kicker{color:#35541b}.join h2{font-family:'Barlow Condensed';font-size:clamp(48px,7vw,86px);line-height:.9;text-transform:uppercase;margin:0}.join .btn{background:var(--dark);color:white}.join p{max-width:420px;font-size:13px;line-height:1.7}.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:190px 190px;gap:12px}.gallery div{background-size:cover;background-position:center;position:relative;overflow:hidden}.gallery div:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,15,8,.55),transparent)}.gallery div:first-child{grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=1200&q=80')}.gallery div:nth-child(2){background-image:url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=80')}.gallery div:nth-child(3){background-image:url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=900&q=80')}.gallery div:nth-child(4){background-image:url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=80')}.gallery div:nth-child(5){background-image:url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80')}.gallery label{position:absolute;bottom:15px;left:18px;z-index:1;font-family:'Barlow Condensed';font-size:21px;font-weight:700;text-transform:uppercase}.footer{padding:45px 0 25px;background:#050d08}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:center;padding-bottom:32px;border-bottom:1px solid var(--line)}.footer-links{display:flex;gap:22px;color:var(--muted);font-size:12px}.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:22px;color:#718477;font-size:10px}.footer-bottom a{color:var(--green)}/* Coach hero: layered editorial typography with scroll-driven side words */
-.coach-hero{height:120vh;min-height:760px;padding:0;display:block;overflow:clip;background:radial-gradient(ellipse at 50% 45%,#1b3b25 0%,#0a1b10 48%,#050d08 100%)}.coach-hero:after{background:repeating-linear-gradient(115deg,transparent 0 110px,rgba(184,255,53,.035) 111px 112px)}.coach-sticky{height:100vh;min-height:700px;position:sticky;top:0;display:flex;flex-direction:column;justify-content:space-between;padding:112px max(22px,calc((100% - 1180px)/2)) 28px;overflow:hidden}.coach-kicker,.coach-bottom{display:flex;justify-content:space-between;align-items:center;color:#a3b4a8;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;position:relative;z-index:2}.coach-kicker span{color:var(--green)}.coach-stage{flex:1;display:grid;grid-template-columns:1fr minmax(270px,38vw) 1fr;align-items:center;gap:clamp(12px,3vw,48px);max-width:1200px;width:100%;margin:0 auto;min-height:0}.coach-portrait{height:min(64vh,620px);min-height:380px;aspect-ratio:.72;justify-self:center;position:relative;isolation:isolate;transform:translateY(12px);filter:drop-shadow(0 28px 60px rgba(0,0,0,.5))}.coach-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;filter:grayscale(100%) contrast(1.08);mask-image:linear-gradient(to bottom,#000 78%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent 100%)}.portrait-ring{position:absolute;inset:7% -13% 13%;border:1px solid rgba(184,255,53,.38);border-radius:50%;z-index:-1;transform:rotate(-13deg)}.portrait-shade{position:absolute;inset:20% 0 0;background:linear-gradient(0deg,#07140e 0%,transparent 72%);pointer-events:none}.coach-name{position:absolute;bottom:-3%;left:50%;transform:translateX(-50%);width:120%;text-align:center}.coach-name>span{font-size:10px;letter-spacing:.3em;color:var(--green);font-weight:800}.coach-name h1{font-family:'Barlow Condensed';font-size:clamp(64px,9vw,126px);line-height:.78;letter-spacing:-.04em;margin:14px 0 10px;font-weight:900}.coach-name h1 span{color:var(--green)}.coach-name p{font-size:9px;letter-spacing:.25em;font-weight:700;color:#c4d0c7}.portrait-stamp{position:absolute;top:8%;right:-12%;width:76px;height:84px;background:var(--green);color:var(--dark);clip-path:polygon(50% 0,100% 12%,92% 72%,50% 100%,8% 72%,0 12%);display:grid;place-content:center;text-align:center;font-family:'Barlow Condensed';font-weight:900;font-size:25px;line-height:1}.portrait-stamp small{font:800 8px 'DM Sans';letter-spacing:.18em;margin-top:5px}.side-copy{position:relative;z-index:2;transition:transform .15s linear,opacity .15s linear;will-change:transform;opacity:.4}.side-copy strong{display:block;font-family:'Barlow Condensed';font-size:clamp(35px,5vw,75px);line-height:.88;letter-spacing:-.025em;text-transform:uppercase}.side-copy em{color:var(--green);font-style:normal}.side-copy small,.side-index{display:block;font-size:9px;letter-spacing:.17em;color:#9fb1a4;font-weight:700}.side-copy small{margin-top:20px}.side-index{margin-bottom:18px;color:var(--green)}.side-right{text-align:right}.coach-bottom{font-size:9px}.scroll-cue{display:flex;align-items:center;gap:10px}.scroll-cue i{display:inline-block;width:24px;height:1px;background:var(--green)}
-@media(max-width:800px){.coach-hero{height:115vh;min-height:750px}.coach-sticky{padding:104px 22px 24px;min-height:700px}.coach-stage{grid-template-columns:1fr 1fr;gap:0;position:relative}.coach-portrait{grid-column:1/3;grid-row:1;height:57vh;min-height:360px;max-height:540px;aspect-ratio:.75;z-index:1}.side-copy{grid-row:1;align-self:end;margin-bottom:12vh;z-index:2}.side-left{grid-column:1;text-align:left;transform:translateX(0)}.side-right{grid-column:2;text-align:right}.side-copy strong{font-size:clamp(27px,5vw,48px)}.side-copy small{font-size:7px;margin-top:10px}.side-index{font-size:7px;margin-bottom:10px}.coach-name h1{font-size:clamp(66px,14vw,105px)}.coach-bottom{font-size:7px;letter-spacing:.1em}.portrait-stamp{right:-7%;width:60px;height:68px;font-size:20px}}
-@media(max-width:480px){.coach-sticky{padding-left:16px;padding-right:16px}.coach-stage{grid-template-columns:1fr 1fr}.coach-portrait{height:54vh;min-height:330px}.side-copy strong{font-size:26px}.side-copy small{max-width:120px;line-height:1.5}.coach-kicker{font-size:8px;letter-spacing:.12em}.coach-bottom>span:last-child{display:none}.coach-name h1{font-size:68px}}
-@media(max-width:800px){.navlinks{display:none;position:absolute;top:81px;left:0;right:0;background:#08170e;padding:24px;flex-direction:column;gap:22px}.navlinks.open{display:flex}.nav-cta{display:none}.menu-toggle{display:block}.hero{min-height:680px;background-position:60% center}.hero-note{display:none}.about-grid{grid-template-columns:1fr;gap:48px}.about-visual{min-height:350px;margin:0 15px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.fixtures{grid-template-columns:1fr}.squad-grid{grid-template-columns:1fr 1fr}.player,.player img{min-height:290px;height:290px}.join-inner{align-items:flex-start;flex-direction:column}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.gallery div:first-child{grid-row:auto;grid-column:span 2}.gallery div:last-child{display:none}.section{padding:75px 0}}@media(max-width:520px){.wrap{width:calc(100% - 34px)}.brand{font-size:12px}.brand small{font-size:8px}.crest{width:40px;height:46px}.hero h1{font-size:74px}.section-head{align-items:flex-start;flex-direction:column}.squad-grid{grid-template-columns:1fr}.player,.player img{height:360px}.values{gap:8px}.value strong{font-size:20px}.stat{padding:22px 18px}.stat strong{font-size:48px}.footer-top,.footer-bottom{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.gallery{gap:8px}.match{padding:20px}.team-name{font-size:10px}}
+:root{--ink:#07110b;--ink2:#0d1911;--paper:#f0f0e8;--lime:#c7ff39;--white:#fbfcf9;--muted:#9aa89e;--red:#f3362f;--red2:#af1818;--line:rgba(255,255,255,.12);--shadow:0 30px 90px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--white);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit}
+.wrap{width:min(1220px,calc(100% - 44px));margin:auto}
+.nav{position:fixed;top:0;left:0;right:0;height:82px;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100% - 1220px)/2));background:rgba(7,17,11,.56);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(18px)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.06em;font-size:13px}
+.crest{width:44px;height:50px;display:grid;place-items:center;background:var(--lime);color:var(--ink);clip-path:polygon(50% 0,100% 12%,92% 74%,50% 100%,8% 74%,0 12%);font-family:'Barlow Condensed';font-size:24px}
+.brand small{display:block;font-size:8px;color:var(--muted);letter-spacing:.18em;margin-top:4px}
+.navlinks{display:flex;gap:26px;font-size:11px;letter-spacing:.12em;font-weight:800;text-transform:uppercase}
+.navlinks a{opacity:.78;transition:.2s}
+.navlinks a:hover{opacity:1;color:var(--lime)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 18px;background:var(--lime);color:var(--ink);font-weight:900;font-size:10px;letter-spacing:.13em;text-transform:uppercase;border:0}
+.btn.red{background:var(--red);color:#fff}
+.btn.dark{background:var(--ink);color:var(--white)}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);color:#fff;padding:9px 12px}
+.kicker{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--lime);font-weight:900}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{font-family:'Barlow Condensed',sans-serif}
+.section{padding:110px 0}
+.section-dark{background:var(--ink2)}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:42px}
+.section-head h2{margin:10px 0 0;text-transform:uppercase;font-size:clamp(54px,7vw,100px);line-height:.86;letter-spacing:-.035em}
+.section-head h2 em{color:var(--lime);font-style:normal}
+.section-desc{max-width:410px;color:var(--muted);font-size:13px;line-height:1.9;margin:0}
+.hero{min-height:100svh;position:relative;overflow:hidden;background:
+radial-gradient(circle at 70% 34%,rgba(199,255,57,.09),transparent 26%),
+linear-gradient(90deg,#061009 8%,rgba(6,16,9,.92) 40%,rgba(6,16,9,.2) 72%),
+linear-gradient(0deg,#061009 0%,transparent 33%),
+url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=2200&q=88') center/cover}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(117deg,transparent 0 45%,rgba(199,255,57,.065) 45.1% 45.8%,transparent 45.9% 100%)}
+.hero-grid{width:min(1220px,calc(100% - 44px));margin:auto;min-height:100svh;padding-top:130px;display:grid;grid-template-columns:1.05fr .9fr;align-items:center;position:relative;z-index:2}
+.hero-copy{position:relative;z-index:3;max-width:650px}
+.hero-meta{display:flex;align-items:center;gap:16px;color:#c3cdc6;font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+.hero-meta:before{content:"";width:36px;height:2px;background:var(--lime)}
+.hero-copy h1{font-size:clamp(74px,10vw,150px);line-height:.76;text-transform:uppercase;letter-spacing:-.045em;margin:28px 0 26px}
+.hero-copy h1 span{display:block;color:var(--lime)}
+.hero-copy p{max-width:520px;color:#ccd4cf;font-size:14px;line-height:1.9}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.hero-facts{display:flex;gap:28px;margin-top:34px}
+.hero-fact{border-left:1px solid rgba(199,255,57,.35);padding-left:12px}
+.hero-fact strong{font-family:'Barlow Condensed';font-size:28px;display:block}
+.hero-fact span{font-size:8px;letter-spacing:.15em;color:var(--muted);text-transform:uppercase}
+.coach-orbit{height:100%;position:relative;display:grid;place-items:end center}
+.coach-orbit:before{content:"";position:absolute;width:min(620px,52vw);height:min(620px,52vw);border-radius:50%;border:1px solid rgba(199,255,57,.28);box-shadow:0 0 0 46px rgba(199,255,57,.025),0 0 0 92px rgba(199,255,57,.015);transform:translateY(12%) rotate(-9deg)}
+.coach-photo{position:relative;z-index:3;width:min(580px,46vw);height:min(90vh,820px);object-fit:contain;object-position:center bottom;filter:drop-shadow(0 36px 70px rgba(0,0,0,.6))}
+.coach-name-plate{position:absolute;z-index:4;bottom:9%;left:50%;transform:translateX(-50%);width:min(650px,120%);text-align:center;pointer-events:none}
+.coach-name-plate .role{font-size:9px;letter-spacing:.32em;color:var(--lime);font-weight:900}
+.coach-name-plate h2{font-size:clamp(72px,10vw,138px);line-height:.72;margin:12px 0 8px;text-transform:uppercase;letter-spacing:-.05em;text-shadow:0 12px 32px rgba(0,0,0,.5)}
+.coach-name-plate p{font-size:8px;letter-spacing:.27em;text-transform:uppercase;color:#dce6df}
+.hero-side{position:absolute;top:50%;transform:translateY(-50%);z-index:4;font-family:'Barlow Condensed';font-size:clamp(26px,4vw,62px);font-weight:900;line-height:.88;text-transform:uppercase;color:rgba(255,255,255,.58)}
+.hero-side em{color:var(--lime);font-style:normal}
+.hero-side.left{left:2%;writing-mode:vertical-rl;transform:translateY(-50%) rotate(180deg)}
+.hero-side.right{right:2%;text-align:right}
+.hero-side small{display:block;font:800 8px 'DM Sans';letter-spacing:.18em;color:#98a69e;margin-top:15px}
+.hero-ticker{position:absolute;left:0;right:0;bottom:0;background:var(--lime);color:var(--ink);display:flex;gap:28px;overflow:hidden;white-space:nowrap;padding:12px 0;z-index:5;font-family:'Barlow Condensed';font-weight:900;font-size:18px;letter-spacing:.08em}
+.hero-ticker span{display:inline-block}
+.editorial-intro{position:relative;min-height:480px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.editorial-intro .giant{font-family:'Barlow Condensed';font-weight:900;font-size:clamp(100px,20vw,290px);line-height:.7;color:rgba(255,255,255,.055);letter-spacing:-.05em;position:absolute;right:-4%;top:10%;user-select:none}
+.intro-card{position:relative;z-index:2;max-width:640px}
+.intro-card h2{font-size:clamp(56px,7vw,96px);line-height:.83;text-transform:uppercase;margin:14px 0 24px}
+.intro-card h2 span{color:var(--lime)}
+.intro-card p{font-size:14px;line-height:1.95;color:var(--muted);max-width:540px}
+.intro-feature{position:relative;z-index:2;min-height:370px;background:
+linear-gradient(135deg,rgba(199,255,57,.08),transparent 45%),
+linear-gradient(180deg,rgba(255,255,255,.06),transparent)}
+.intro-feature .quote{position:absolute;inset:28px;border-left:2px solid var(--lime);padding-left:20px;display:flex;align-items:flex-end}
+.quote strong{font-family:'Barlow Condensed';font-size:clamp(44px,6vw,76px);line-height:.86;text-transform:uppercase}
+.quote em{font-style:normal;color:var(--lime)}
+.marquee{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1)}
+.marquee-track{display:flex;width:max-content;animation:marquee 22s linear infinite}
+.marquee span{padding:11px 30px;font-family:'Barlow Condensed';font-size:20px;font-weight:800;letter-spacing:.1em}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
+.stat{padding:28px 30px;border-right:1px solid var(--line);position:relative}
+.stat:last-child{border-right:0}
+.stat:after{content:"";position:absolute;right:20px;top:20px;width:8px;height:8px;background:var(--lime);border-radius:50%;box-shadow:0 0 20px rgba(199,255,57,.7)}
+.stat strong{display:block;font-family:'Barlow Condensed';font-size:58px;line-height:.82;color:var(--white)}
+.stat span{display:block;margin-top:14px;color:var(--muted);font-size:8px;letter-spacing:.14em;text-transform:uppercase}
+.feature-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:16px}
+.story-card{position:relative;min-height:480px;overflow:hidden;background:#17231b;border:1px solid var(--line)}
+.story-card img{width:100%;height:100%;object-fit:cover;filter:saturate(.72);transition:transform .8s,filter .8s}
+.story-card:hover img{transform:scale(1.05);filter:saturate(1)}
+.story-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,12,8,.94),transparent 55%)}
+.story-copy{position:absolute;left:28px;right:28px;bottom:26px;z-index:2}
+.story-copy .tag{display:inline-block;border:1px solid rgba(199,255,57,.45);color:var(--lime);padding:6px 9px;font-size:8px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+.story-copy h3{font-size:clamp(48px,6vw,74px);line-height:.84;text-transform:uppercase;margin:14px 0 8px}
+.story-copy p{color:#bdc7bf;font-size:11px;line-height:1.7;max-width:520px;margin:0}
+.side-stack{display:grid;grid-template-rows:1fr 1fr;gap:16px}
+.side-story{position:relative;min-height:232px;overflow:hidden;border:1px solid var(--line);background:#121c16}
+.side-story img{width:100%;height:100%;object-fit:cover;opacity:.72;transition:.6s}
+.side-story:hover img{transform:scale(1.05);opacity:.9}
+.side-story:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,12,8,.95),transparent 65%)}
+.side-story div{position:absolute;left:20px;bottom:17px;z-index:2}
+.side-story h4{font:800 32px/ .86 'Barlow Condensed';text-transform:uppercase;margin:8px 0 0}
+.match-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:22px}
+.match-feature{background:var(--red);color:#fff;padding:32px;position:relative;overflow:hidden;min-height:340px}
+.match-feature:after{content:"MATCH";position:absolute;right:-40px;bottom:-70px;font:900 200px/1 'Barlow Condensed';color:rgba(0,0,0,.1)}
+.match-feature h3{font-size:clamp(66px,8vw,100px);line-height:.75;margin:30px 0 16px;text-transform:uppercase}
+.match-feature p{font-size:11px;line-height:1.8;max-width:290px;opacity:.85}
+.match-date{font-size:9px;letter-spacing:.2em;text-transform:uppercase;font-weight:900}
+.match-list{display:grid;gap:10px}
+.fixture{background:#101b14;border:1px solid var(--line);padding:20px 22px;display:grid;grid-template-columns:110px 1fr 120px;align-items:center;gap:20px}
+.fixture .date strong{font-family:'Barlow Condensed';font-size:37px;line-height:.8;display:block}
+.fixture .date span{font-size:8px;letter-spacing:.15em;color:var(--muted);text-transform:uppercase}
+.fixture .teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;text-align:center}
+.team{font-size:11px;font-weight:900;text-transform:uppercase}
+.team-mark{width:50px;height:58px;margin:0 auto 9px;background:#1b3423;color:var(--lime);display:grid;place-items:center;clip-path:polygon(50% 0,100% 12%,92% 74%,50% 100%,8% 74%,0 12%);font:900 23px/1 'Barlow Condensed'}
+.vs{font:900 22px/1 'Barlow Condensed';color:#6d7b72}
+.fixture .venue{text-align:right;font-size:8px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;line-height:1.7}
+.trial{background:var(--paper);color:#111;position:relative;overflow:hidden}
+.trial-grid{display:grid;grid-template-columns:1fr .95fr;gap:20px;align-items:stretch}
+.trial-copy{padding:70px 0}
+.trial-copy .kicker{color:var(--red)}
+.trial-copy h2{font-size:clamp(70px,9vw,130px);line-height:.72;margin:18px 0;text-transform:uppercase}
+.trial-copy h2 span{color:var(--red)}
+.trial-copy p{font-size:14px;line-height:1.9;color:#444;max-width:560px}
+.trial-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+.trial-box{border-top:2px solid #111;padding:14px 0}
+.trial-box strong{display:block;font:900 34px/ .9 'Barlow Condensed'}
+.trial-box span{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#666}
+.trial-art{position:relative;min-height:520px;background:#111;overflow:hidden}
+.trial-art:before{content:"TRIAL\A 2026";white-space:pre;position:absolute;inset:auto -10px 20px auto;color:rgba(199,255,57,.85);font:900 clamp(92px,11vw,155px)/.74 'Barlow Condensed';text-align:right}
+.trial-art:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0 58%,rgba(199,255,57,.18) 58.2% 72%,transparent 72.2%)}
+.trial-panel{position:absolute;z-index:2;left:26px;bottom:28px;right:26px;border:1px solid rgba(255,255,255,.2);padding:20px;background:rgba(5,10,7,.66);backdrop-filter:blur(8px);color:#fff}
+.trial-panel strong{font:900 42px/ .84 'Barlow Condensed';text-transform:uppercase}
+.trial-panel p{font-size:9px;line-height:1.7;color:#bfc8c1;margin:10px 0 0}
+.player-section{background:linear-gradient(180deg,#0b1610 0,#07100a 100%)}
+.player-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:stretch}
+.player-main{position:relative;min-height:640px;overflow:hidden;background:#18231b}
+.player-main img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.05);opacity:.86;transition:.7s}
+.player-main:hover img{filter:grayscale(0);transform:scale(1.03)}
+.player-main:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,11,7,.96),transparent 55%)}
+.player-main .player-copy{position:absolute;left:28px;bottom:28px;z-index:2}
+.player-copy h3{font-size:clamp(54px,7vw,90px);line-height:.76;margin:11px 0 6px;text-transform:uppercase}
+.player-copy p{font-size:10px;color:#bdc8bf;max-width:370px;line-height:1.7}
+.player-no{position:absolute;right:16px;top:5px;z-index:2;font:900 190px/.8 'Barlow Condensed';color:rgba(199,255,57,.1)}
+.player-notes{display:grid;grid-template-rows:1fr 1fr;gap:16px}
+.note-card{background:#101a13;border:1px solid var(--line);padding:28px;position:relative;overflow:hidden}
+.note-card .micro{font-size:8px;letter-spacing:.2em;color:var(--lime);font-weight:900;text-transform:uppercase}
+.note-card h4{font:900 48px/.83 'Barlow Condensed';text-transform:uppercase;margin:15px 0}
+.note-card p{font-size:11px;line-height:1.8;color:var(--muted);max-width:430px}
+.note-card .number{position:absolute;right:20px;bottom:-30px;font:900 150px/.8 'Barlow Condensed';color:rgba(255,255,255,.03)}
+.gallery-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;grid-template-rows:230px 230px;gap:10px}
+.g{position:relative;overflow:hidden;background:#18231b;border:1px solid var(--line)}
+.g:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,11,7,.65),transparent 55%)}
+.g img{width:100%;height:100%;object-fit:cover;transition:.8s}
+.g:hover img{transform:scale(1.06)}
+.g label{position:absolute;left:18px;bottom:15px;z-index:2;font:900 22px/.9 'Barlow Condensed';text-transform:uppercase}
+.g1{grid-row:span 2}
+.g3{grid-row:span 2}
+.join{padding:82px 0;background:var(--lime);color:var(--ink);position:relative;overflow:hidden}
+.join:before{content:"PLAY.\A GROW.\A RISE.";white-space:pre;position:absolute;right:-10px;bottom:-95px;font:900 180px/.66 'Barlow Condensed';color:rgba(0,0,0,.07);text-align:right}
+.join-inner{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.join h2{font-size:clamp(72px,9vw,130px);line-height:.72;margin:12px 0 0;text-transform:uppercase;letter-spacing:-.04em}
+.join-copy{max-width:430px}
+.join-copy p{font-size:13px;line-height:1.8}
+.footer{padding:48px 0 20px;background:#040a06}
+.footer-top{display:flex;justify-content:space-between;gap:30px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.footer-links{display:flex;gap:20px;align-items:center;flex-wrap:wrap;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#a7b3aa}
+.footer-bottom{display:flex;justify-content:space-between;padding-top:20px;color:#68756c;font-size:9px}
+.reveal{opacity:0;transform:translateY(40px)}
+.parallax{will-change:transform}
+@media(max-width:900px){
+.navlinks{display:none;position:absolute;top:81px;left:0;right:0;background:#08140c;padding:24px;flex-direction:column;gap:22px;border-bottom:1px solid var(--line)}
+.navlinks.open{display:flex}.nav-cta{display:none}.menu-toggle{display:block}
+.hero-grid{grid-template-columns:1fr;align-items:end;padding-top:125px;padding-bottom:90px}
+.hero-copy{max-width:700px}.coach-orbit{min-height:590px;margin-top:-10px}
+.coach-photo{width:min(600px,82vw);height:620px}
+.coach-orbit:before{width:min(560px,80vw);height:min(560px,80vw)}
+.coach-name-plate{bottom:4%}
+.hero-side{font-size:30px}.hero-side.left{left:-6px}.hero-side.right{right:8px}
+.editorial-intro,.trial-grid,.player-layout,.match-wrap{grid-template-columns:1fr}
+.intro-feature{min-height:300px}
+.trial-copy{padding:60px 0 25px}.trial-art{min-height:470px}
+.player-main{min-height:580px}
+.stats{grid-template-columns:1fr 1fr}.stat{border-bottom:1px solid var(--line)}.stat:nth-child(2){border-right:0}.stat:nth-child(3){border-bottom:0}.stat:nth-child(4){border-bottom:0;border-right:0}
+.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}.g1,.g3{grid-row:auto}.g1{grid-column:span 2}
+.section{padding:84px 0}
+}
+@media(max-width:560px){
+.wrap{width:calc(100% - 30px)}
+.nav{height:74px;padding:0 15px}.brand{font-size:11px}.crest{width:38px;height:44px;font-size:21px}.brand small{font-size:7px}
+.hero{min-height:940px}.hero-grid{width:calc(100% - 30px);padding-top:105px}
+.hero-copy h1{font-size:72px}.hero-copy p{font-size:12px}.hero-facts{gap:15px;flex-wrap:wrap}.hero-fact strong{font-size:24px}
+.coach-orbit{min-height:480px;margin-top:-25px}.coach-photo{height:500px;width:92vw}.coach-orbit:before{width:74vw;height:74vw}.coach-name-plate h2{font-size:70px}.coach-side{display:none}.hero-side{font-size:22px;opacity:.3}.hero-side.left{left:-9px}.hero-side.right{right:-5px}
+.section-head{align-items:flex-start;flex-direction:column;gap:15px}.section-head h2{font-size:56px}
+.stats{grid-template-columns:1fr 1fr}.stat{padding:22px 18px}.stat strong{font-size:46px}
+.feature-grid{grid-template-columns:1fr}.side-stack{grid-template-rows:repeat(2,260px)}.story-card{min-height:430px}
+.fixture{grid-template-columns:72px 1fr;gap:12px}.fixture .venue{display:none}.fixture .date strong{font-size:30px}.fixture .teams{gap:9px}.team{font-size:9px}.team-mark{width:42px;height:50px;font-size:19px}
+.trial-copy h2{font-size:72px}.trial-meta{grid-template-columns:1fr 1fr}.trial-art{min-height:430px}
+.player-main{min-height:500px}.player-copy h3{font-size:64px}.player-notes{grid-template-rows:auto;}.note-card h4{font-size:44px}
+.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.g1{grid-column:span 2}.g5{display:none}
+.join-inner{align-items:flex-start;flex-direction:column}.join h2{font-size:72px}.footer-top,.footer-bottom{flex-direction:column;align-items:flex-start}
+}
 </style>
 </head>
 <body>
 <header class="nav">
-<a class="brand" href="#home" aria-label="Young Star Football Club home"><div class="crest">YS</div><div>YOUNG STAR<small>FOOTBALL CLUB · YSFC</small></div></a>
-<nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#about">OUR CLUB</a><a href="#fixtures">FIXTURES</a><a href="#squad">THE SQUAD</a><a href="#gallery">GALLERY</a></nav>
-<a class="nav-cta" href="#join">JOIN THE CLUB ↗</a><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navlinks">☰ MENU</button>
+<a class="brand" href="#home" aria-label="Young Star Football Club home"><div class="crest">YS</div><div>YOUNG STAR<small>FOOTBALL CLUB · YSFA</small></div></a>
+<nav class="navlinks" id="navlinks">
+<a href="#club">Club</a><a href="#stories">Stories</a><a href="#matches">Matches</a><a href="#academy">Academy</a><a href="#squad">Squad</a><a href="#gallery">Gallery</a>
+</nav>
+<a class="nav-cta" href="#join">Join the Star ↗</a>
+<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navlinks">☰</button>
 </header>
-<main>
-<section class="hero coach-hero" id="home"><div class="coach-sticky"><div class="coach-kicker">YOUNG STAR FOOTBALL CLUB <span>·</span> THE MAN BEHIND THE TEAM</div><div class="coach-stage"><div class="side-copy side-left" data-side="left"><span class="side-index">01 / THE MINDSET</span><strong>BUILT BY<br><em>DISCIPLINE.</em></strong><small>HARD WORK. HEART. HUNGER.</small></div><div class="coach-portrait"><div class="portrait-ring"></div><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3JD8qtdA9qoLzedlrs1XxWLto8f/fa32637c-e6e4-4c05-b5b3-84170f286212.png" alt="Coach Ashish portrait"><div class="portrait-shade"></div><div class="coach-name"><span>HEAD COACH</span><h1>ASHISH<span>.</span></h1><p>THE MAN BEHIND THE STAR.</p></div><div class="portrait-stamp">YSFC<br><small>COACH</small></div></div><div class="side-copy side-right" data-side="right"><span class="side-index">02 / THE VISION</span><strong>MADE FOR<br><em>GREATNESS.</em></strong><small>ONE TEAM. ONE DREAM.</small></div></div><div class="coach-bottom"><span>LEAD WITH PURPOSE</span><div class="scroll-cue"><i></i> SCROLL TO EXPLORE</div><span>YOUNG STAR FC · EST. TBC</span></div></div></section>
-<div class="ticker"><span>YOUNG STAR FC</span><b>✳</b><span>ONE TEAM. ONE DREAM.</span><b>✳</b><span>PLAY WITH PRIDE</span><b>✳</b><span>YOUNG STAR FC</span><b>✳</b><span>ONE TEAM. ONE DREAM.</span></div>
-<section class="section" id="about"><div class="wrap about-grid"><div class="about-visual"><div class="about-badge">PLAY<br>WITH<br>PRIDE<small>EST. YEAR · TBC</small></div></div><div class="about-copy"><div class="kicker">WHO WE ARE</div><h2>A CLUB WITH<br><em>A BIGGER</em><br>DREAM.</h2><p>Young Star Football Club is built around the love of the beautiful game. We bring young talent together, grow through teamwork, and step onto every pitch ready to give our all.</p><p>Our mission is simple: create a place where players can develop their skills, build lasting friendships, and represent the badge with pride.</p><div class="values"><div class="value"><strong>PASSION</strong><span>Play from the heart.</span></div><div class="value"><strong>UNITY</strong><span>Stronger together.</span></div><div class="value"><strong>GROWTH</strong><span>Always getting better.</span></div></div></div></div></section>
-<section class="section dark-section"><div class="wrap"><div class="section-head"><div><div class="kicker">THE CLUB AT A GLANCE</div><h2>OUR GAME.<br><em>OUR NUMBERS.</em></h2></div><p class="section-desc">A growing football family with one shared goal: keep learning, keep competing, and keep moving forward.</p></div><div class="stats"><div class="stat"><strong>YSFC</strong><span>Our badge. Our pride.</span></div><div class="stat"><strong>01</strong><span>One united team</span></div><div class="stat"><strong>90′</strong><span>Give it everything</span></div><div class="stat"><strong>∞</strong><span>Dreams to chase</span></div></div></div></section>
-<section class="section" id="fixtures"><div class="wrap"><div class="section-head"><div><div class="kicker">SAVE THE DATE</div><h2>UPCOMING <em>FIXTURES.</em></h2></div><p class="section-desc">Every match is another chance to show what we're made of. Fixture details will be updated here.</p></div><div class="fixtures">
-<article class="match"><div class="match-top"><span>UPCOMING FIXTURE</span><span class="tag">DATE TBC</span></div><div class="teams"><div><div class="team-mark">YS</div><div class="team-name">YOUNG STAR FC</div></div><div class="vs">VS</div><div><div class="team-mark">OP</div><div class="team-name">OPPONENT TBC</div></div></div><div class="match-bottom"><span>📍 <strong>Venue to be announced</strong></span><span>Kick-off: TBC</span></div></article>
-<article class="match"><div class="match-top"><span>UPCOMING FIXTURE</span><span class="tag">DATE TBC</span></div><div class="teams"><div><div class="team-mark">YS</div><div class="team-name">YOUNG STAR FC</div></div><div class="vs">VS</div><div><div class="team-mark">OP</div><div class="team-name">OPPONENT TBC</div></div></div><div class="match-bottom"><span>📍 <strong>Venue to be announced</strong></span><span>Kick-off: TBC</span></div></article>
-</div></div></section>
-<section class="section dark-section" id="squad"><div class="wrap"><div class="section-head"><div><div class="kicker">MEET THE TEAM</div><h2>THE <em>SQUAD.</em></h2></div><p class="section-desc">Every player brings something different. Together, we make the team. Squad profiles coming soon.</p></div><div class="squad-grid">
-<article class="player"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80" alt="Football player training on the pitch"><div class="player-num">01</div><div class="player-info"><small>GOALKEEPER · TBC</small><h3>PLAYER NAME</h3></div></article>
-<article class="player"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Football match on the field"><div class="player-num">07</div><div class="player-info"><small>MIDFIELDER · TBC</small><h3>PLAYER NAME</h3></div></article>
-<article class="player"><img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=800&q=80" alt="Football players competing for the ball"><div class="player-num">09</div><div class="player-info"><small>FORWARD · TBC</small><h3>PLAYER NAME</h3></div></article>
-</div></div></section>
-<section class="section" id="gallery"><div class="wrap"><div class="section-head"><div><div class="kicker">THE BEAUTIFUL GAME</div><h2>MOMENTS <em>THAT MATTER.</em></h2></div><p class="section-desc">From training sessions to match day memories, this is where the team comes alive.</p></div><div class="gallery"><div><label>THE MATCH DAY</label></div><div><label>THE GRIND</label></div><div><label>THE PASSION</label></div><div><label>THE TEAM</label></div><div><label>THE DREAM</label></div></div></div></section>
-<section class="join" id="join"><div class="wrap join-inner"><div><div class="kicker">YOUR JOURNEY STARTS HERE</div><h2>READY TO WEAR<br>THE STAR?</h2></div><div><p>Want to join Young Star Football Club, support the team, or collaborate with us? Get in touch and become part of the journey.</p><a class="btn" href="mailto:ysfc@example.com?subject=Young%20Star%20FC%20Enquiry">GET IN TOUCH ↗</a></div></div></section>
+
+<main id="home">
+<section class="hero" id="hero">
+<div class="hero-grid">
+<div class="hero-copy reveal">
+<div class="hero-meta">Bettiah, Bihar · Young Star Football Club</div>
+<h1>ONE TEAM.<span>ONE DREAM.</span></h1>
+<p>A football home built around discipline, development and the belief that every young player has another level to reach.</p>
+<div class="hero-actions"><a class="btn" href="#academy">Explore the academy ↗</a><a class="btn dark" href="#matches">Match centre</a></div>
+<div class="hero-facts">
+<div class="hero-fact"><strong>YSFA</strong><span>Football Academy</span></div>
+<div class="hero-fact"><strong>2026</strong><span>Est. journey</span></div>
+<div class="hero-fact"><strong>UP15–20</strong><span>Trial pathway</span></div>
+</div>
+</div>
+<div class="coach-orbit parallax" id="coachVisual">
+<img class="coach-photo" src="https://res.cloudinary.com/roq8nakt/image/upload/v1790562797/ysfc/coach-ashish-cutout.png" alt="Coach Ashish">
+<div class="coach-name-plate"><div class="role">HEAD COACH</div><h2>ASHISH.</h2><p>THE MAN BEHIND THE MINDSET.</p></div>
+</div>
+<div class="hero-side left">BUILT BY <em>DISCIPLINE.</em><small>01 / THE MINDSET</small></div>
+<div class="hero-side right">MADE FOR <em>GREATNESS.</em><small>02 / THE VISION</small></div>
+</div>
+<div class="hero-ticker" aria-hidden="true"><div class="marquee-track"><span>YOUNG STAR FC ✳</span><span>PLAY WITH PRIDE ✳</span><span>ONE TEAM. ONE DREAM. ✳</span><span>YOUNG STAR FC ✳</span><span>PLAY WITH PRIDE ✳</span><span>ONE TEAM. ONE DREAM. ✳</span></div></div>
+</section>
+
+<section class="section" id="club">
+<div class="wrap editorial-intro">
+<div class="giant">YSFA</div>
+<div class="intro-card reveal">
+<div class="kicker">THE CLUB DOSSIER</div>
+<h2>THE GAME IS <span>BIGGER</span><br>THAN THE SCORE.</h2>
+<p>Young Star Football Club is shaping a football culture in Bettiah where players learn to compete, communicate and keep improving. The badge is the identity. The work is the standard.</p>
+<a class="btn" href="#stories">Enter the story ↗</a>
+</div>
+<div class="intro-feature reveal">
+<div class="quote"><strong>“Talent gets noticed.<br><em>Discipline gets you there.</em>”</strong></div>
+</div>
+</div>
+</section>
+
+<div class="marquee"><div class="marquee-track"><span>DISCIPLINE</span><span>·</span><span>UNITY</span><span>·</span><span>DEVELOPMENT</span><span>·</span><span>AMBITION</span><span>·</span><span>DISCIPLINE</span><span>·</span><span>UNITY</span><span>·</span><span>DEVELOPMENT</span><span>·</span><span>AMBITION</span><span>·</span></div></div>
+
+<section class="section section-dark">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">OUR NUMBERS</div><h2>PLAY. <em>GROW.</em><br>RISE.</h2></div><p class="section-desc">A compact club dashboard designed like a sports editorial spread — big numbers, clear hierarchy and zero wasted space.</p></div>
+<div class="stats reveal">
+<div class="stat"><strong>YSFA</strong><span>Club identity</span></div>
+<div class="stat"><strong>01</strong><span>United football family</span></div>
+<div class="stat"><strong>90′</strong><span>Every minute matters</span></div>
+<div class="stat"><strong>∞</strong><span>Room to improve</span></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="stories">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">CLUB STORIES</div><h2>THE <em>EDITORIAL.</em></h2></div><p class="section-desc">The visual language borrows from football magazines: oversized type, monochrome photography, sharp blocks and layered information.</p></div>
+<div class="feature-grid">
+<article class="story-card reveal">
+<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1400&q=85" alt="Footballers on a pitch">
+<div class="story-copy"><span class="tag">Club News</span><h3>THE GRIND<br>STARTS HERE.</h3><p>Training is where the club's identity becomes visible — repetition, movement, communication and the willingness to do it again.</p></div>
+</article>
+<div class="side-stack">
+<article class="side-story reveal"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1000&q=85" alt="Players training"><div><div class="kicker">01 / TRAINING</div><h4>HARD WORK<br>LOOKS GOOD.</h4></div></article>
+<article class="side-story reveal"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1000&q=85" alt="Football match"><div><div class="kicker">02 / MATCHDAY</div><h4>MAKE THE<br>MINUTES COUNT.</h4></div></article>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section-dark" id="matches">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">MATCH CENTRE</div><h2>UPCOMING <em>FIXTURES.</em></h2></div><p class="section-desc">Fixture details can be updated here as the club confirms opponents, venues and kick-off times.</p></div>
+<div class="match-wrap">
+<div class="match-feature reveal"><div class="match-date">Next chapter · 2026</div><h3>READY<br>FOR<br>KICKOFF?</h3><p>Matchday is where the work becomes visible. Bring the badge, the energy and the discipline.</p><a class="btn dark" href="#join">Get involved ↗</a></div>
+<div class="match-list">
+<article class="fixture reveal"><div class="date"><strong>TBC</strong><span>Fixture 01</span></div><div class="teams"><div class="team"><div class="team-mark">YS</div>Young Star FC</div><div class="vs">VS</div><div class="team"><div class="team-mark">OP</div>Opponent</div></div><div class="venue">Venue TBC<br>Kickoff TBC</div></article>
+<article class="fixture reveal"><div class="date"><strong>TBC</strong><span>Fixture 02</span></div><div class="teams"><div class="team"><div class="team-mark">YS</div>Young Star FC</div><div class="vs">VS</div><div class="team"><div class="team-mark">OP</div>Opponent</div></div><div class="venue">Venue TBC<br>Kickoff TBC</div></article>
+<article class="fixture reveal"><div class="date"><strong>TBC</strong><span>Fixture 03</span></div><div class="teams"><div class="team"><div class="team-mark">YS</div>Young Star FC</div><div class="vs">VS</div><div class="team"><div class="team-mark">OP</div>Opponent</div></div><div class="venue">Venue TBC<br>Kickoff TBC</div></article>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section trial" id="academy">
+<div class="wrap trial-grid">
+<div class="trial-copy reveal"><div class="kicker">ACADEMY / PLAYER PATHWAY</div><h2>THE NEXT<br><span>TRIAL.</span></h2><p>The Young Star Football Academy selection pathway is designed to bring young players into a competitive environment. The current 2026 trial creative references the MPL selection pathway, with eligible players from Bihar and other states.</p>
+<div class="trial-meta">
+<div class="trial-box"><strong>25 SEP</strong><span>Trial date · 2026</span></div>
+<div class="trial-box"><strong>₹100</strong><span>Trial fee</span></div>
+<div class="trial-box"><strong>UP15–20</strong><span>Player age window</span></div>
+<div class="trial-box"><strong>FREE</strong><span>Snacks</span></div>
+</div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:28px"><a class="btn red" href="tel:+919128223578">Call 9128223578</a><a class="btn dark" href="#join">Ask the academy ↗</a></div>
+</div>
+<div class="trial-art reveal"><div class="trial-panel"><div class="kicker">YOUNG STAR FOOTBALL ACADEMY · BETTIAH</div><strong>MPL 2026<br>SELECTION PATH.</strong><p>Trial information is based on the club creative shared for the current academy campaign. Team selection and match schedules remain subject to the club's final confirmation.</p></div></div>
+</div>
+</section>
+
+<section class="section player-section" id="squad">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">THE PLAYERS</div><h2>PLAYER <em>SPOTLIGHT.</em></h2></div><p class="section-desc">An editorial player profile system inspired by modern football microsites. Replace the sample profile with official squad data whenever ready.</p></div>
+<div class="player-layout">
+<article class="player-main reveal"><img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=1400&q=85" alt="Football player competing"><div class="player-no">07</div><div class="player-copy"><div class="kicker">MIDFIELDER / SPOTLIGHT</div><h3>THE ENGINE.</h3><p>Vision. Balance. Work rate. The midfield is where the team's rhythm is built.</p></div></article>
+<div class="player-notes">
+<article class="note-card reveal"><div class="micro">PROFILE SYSTEM</div><h4>CAREER /<br>NUMBERS.</h4><p>Use this panel for appearances, goals, assists, position, age group and other verified squad data.</p><div class="number">01</div></article>
+<article class="note-card reveal"><div class="micro">COACHING NOTE</div><h4>PLAY WITH<br>INTENT.</h4><p>Every session should answer one question: are we becoming a little better than yesterday?</p><div class="number">02</div></article>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section-dark" id="gallery">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">THE ARCHIVE</div><h2>MOMENTS <em>THAT MATTER.</em></h2></div><p class="section-desc">A magazine-style gallery grid for matchday, training, academy and community imagery from the club's Instagram archive.</p></div>
+<div class="gallery-grid">
+<div class="g g1 reveal"><img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1400&q=85" alt="Football stadium"><label>THE MATCHDAY</label></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85" alt="Football team"><label>THE GRIND</label></div>
+<div class="g g3 reveal"><img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85" alt="Football match"><label>THE COMPETITION</label></div>
+<div class="g reveal"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=85" alt="Football training"><label>THE CULTURE</label></div>
+<div class="g g5 reveal"><img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=900&q=85" alt="Football players"><label>THE DREAM</label></div>
+</div>
+</div>
+</section>
+
+<section class="join" id="join">
+<div class="wrap join-inner reveal">
+<div><div class="kicker" style="color:#345313">YOUR NEXT MOVE</div><h2>WEAR<br>THE STAR.</h2></div>
+<div class="join-copy"><p>Want to join the academy, support the club, collaborate on a football programme or ask about trials? Start with a message.</p><a class="btn dark" href="tel:+919128223578">Contact the club ↗</a></div>
+</div>
+</section>
 </main>
-<footer class="footer"><div class="wrap"><div class="footer-top"><a class="brand" href="#home"><div class="crest">YS</div><div>YOUNG STAR<small>FOOTBALL CLUB · YSFC</small></div></a><nav class="footer-links"><a href="#about">Our Club</a><a href="#fixtures">Fixtures</a><a href="#squad">Squad</a><a href="#gallery">Gallery</a><a href="#join">Contact</a></nav></div><div class="footer-bottom"><span>© <span id="year"></span> Young Star Football Club. All rights reserved.</span><span>MADE FOR THE LOVE OF THE GAME ⚽</span></div></div></footer>
+
+<footer class="footer">
+<div class="wrap">
+<div class="footer-top">
+<a class="brand" href="#home"><div class="crest">YS</div><div>YOUNG STAR<small>FOOTBALL CLUB · YSFA</small></div></a>
+<div class="footer-links"><a href="#club">Club</a><a href="#stories">Stories</a><a href="#matches">Matches</a><a href="#academy">Academy</a><a href="#squad">Squad</a><a href="#gallery">Gallery</a></div>
+</div>
+<div class="footer-bottom"><span>© <span id="year"></span> Young Star Football Club. All rights reserved.</span><span>Bettiah, Bihar · MADE FOR THE LOVE OF THE GAME ⚽</span></div>
+</div>
+</footer>
+
 <script>
-const toggle=document.getElementById('menuToggle'),nav=document.getElementById('navlinks');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕ CLOSE':'☰ MENU'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰ MENU'}));document.getElementById('year').textContent=new Date().getFullYear();
-const coachHero=document.querySelector('.coach-hero'),sideLeft=document.querySelector('.side-left'),sideRight=document.querySelector('.side-right');let scrollTick=false;function animateCoach(){const rect=coachHero.getBoundingClientRect(),range=coachHero.offsetHeight-window.innerHeight,progress=Math.max(0,Math.min(1,-rect.top/Math.max(1,range)));const distance=1-progress;sideLeft.style.transform='translateX('+(-140*distance)+'px)';sideRight.style.transform='translateX('+(140*distance)+'px)';sideLeft.style.opacity=String(.4+.6*progress);sideRight.style.opacity=String(.4+.6*progress);scrollTick=false}window.addEventListener('scroll',()=>{if(!scrollTick){window.requestAnimationFrame(animateCoach);scrollTick=true}},{passive:true});animateCoach();
+const toggle=document.getElementById('menuToggle'),nav=document.getElementById('navlinks');
+toggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕':'☰'});
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+if(window.gsap&&window.ScrollTrigger){
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('.reveal').forEach((el)=>gsap.fromTo(el,{autoAlpha:0,y:38},{autoAlpha:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 86%',once:true}}));
+gsap.to('.coach-photo',{y:-36,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:1}});
+gsap.to('.coach-orbit:before',{rotation:14,scale:1.06,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:1}});
+gsap.to('.hero-side.left',{x:105,opacity:.96,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:1}});
+gsap.to('.hero-side.right',{x:-105,opacity:.96,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:1}});
+gsap.to('.hero-copy',{y:-35,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:1}});
+}
 </script>
-</body></html>
+</body>
+</html>
